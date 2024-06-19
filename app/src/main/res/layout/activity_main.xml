@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zkteco.biometric.palmdemo.MainActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="report..."
+        android:layout_span="5"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/bnBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnBegin"
+            android:text="begin" />
+
+        <Button
+            android:id="@+id/bnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnStop"
+            android:text="end" />
+
+        <Button
+            android:id="@+id/bnEnroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnEnroll"
+            android:text="enroll" />
+
+        <Button
+            android:id="@+id/bnIdentify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnVerify"
+            android:text="identify" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/bnDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnDel"
+            android:text="Delete" />
+        <Button
+            android:id="@+id/bnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBnClear"
+            android:text="Clear" />
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:"/>
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="scar" />
+    </TableRow>
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableLayout>
